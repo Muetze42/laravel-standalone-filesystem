@@ -1,4 +1,6 @@
 <?php
+// @formatter:off
+// phpcs:ignoreFile
 
 namespace Illuminate\Support\Facades {
     class Config
@@ -1725,6 +1727,31 @@ namespace Illuminate\Support\Facades {
         {
             /** @var \Illuminate\Filesystem\FilesystemAdapter $instance */
             return $instance->macroCall($method, $parameters);
+        }
+
+    }
+}
+
+namespace Illuminate\Support {
+    class Arr {
+
+    }
+    class Js {
+
+    }
+    class Str {
+
+    }
+    class Collection {
+        /**
+         *
+         *
+         * @see \Laravel\Nova\NovaServiceProvider::registerCollectionMacros()
+         * @static
+         */
+        public static function isAssoc()
+        {
+            return \Illuminate\Support\Collection::isAssoc();
         }
 
     }
