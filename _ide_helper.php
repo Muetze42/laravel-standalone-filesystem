@@ -203,7 +203,6 @@ namespace Illuminate\Support\Facades {
         }
 
     }
-
     class File
     {
         /**
@@ -914,7 +913,6 @@ namespace Illuminate\Support\Facades {
         }
 
     }
-
     class Storage {
         /**
          * Get a filesystem instance.
